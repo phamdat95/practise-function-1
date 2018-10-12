@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" placeholder="value" oninput="returnNewValue(this.value)"><br>
+<button id="button" onclick="dispNewValue(newValue)">Return new value!</button>
+<script>
+    function returnNewValue(value) {
+         newValue = parseFloat(value) + 1;
+        return newValue;
+    }
+    function dispNewValue(newValue) {
+        alert(newValue);
+    }
+</script>
+</body>
+</html>

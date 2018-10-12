@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var valueOne = parseFloat(prompt('Enter value 1:'));
+    var valueTwo = parseFloat(prompt('Enter value 2:'));
+    function checkValue(valueOne, valueTwo) {
+        if (valueOne > valueTwo) {
+            alert(valueOne + ' greater than ' + valueTwo);
+        }
+        if (valueOne < valueTwo){
+            alert(valueOne + ' + ' + valueTwo + ' equal: ' +(valueTwo+valueOne))
+        }
+    }
+</script>
+<center>
+<button onclick="checkValue(valueOne,valueTwo)">Check!</button>
+    </center>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var arrOne = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    var arrTwo = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    function checkStr(str) {
+        var i;
+        for (i = 0; i < arrOne.length; i++){
+            if (arrOne[i]===str){
+                break;
+            }
+        }
+        if (i < arrOne.length)
+            alert(arrTwo[i]);
+        else alert('no string');
+    }
+    var str = prompt('enter your string');
+    checkStr(str);
+</script>
+</body>
+</html>
